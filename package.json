@@ -1,0 +1,37 @@
+{
+  "name": "vibeflow",
+  "productName": "Vibeflow",
+  "version": "0.4.0",
+  "description": "A small local video editor with a command history",
+  "author": "Vibeflow",
+  "license": "UNLICENSED",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite build --mode development && electron .",
+    "build": "tsc --noEmit && vite build",
+    "test": "python -m unittest discover -s tests -v",
+    "package": "node scripts/package.cjs",
+    "setup": "node scripts/setup.cjs",
+    "test:ui": "node scripts/test-ui.cjs",
+    "test:media": "python scripts/verify_media.py",
+    "test:package": "node scripts/check-package.cjs",
+    "test:startup": "node scripts/check-app.cjs"
+  },
+  "config": {
+    "forge": "./forge.config.cjs"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "8.0.1",
+    "@ffprobe-installer/win32-x64": "5.1.0",
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "electron": "44.7.0",
+    "ffmpeg-static": "5.3.0",
+    "jsdom": "30.1.2",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.4"
+  }
+}

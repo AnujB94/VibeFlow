@@ -1,0 +1,51 @@
+# Generated dependencies, builds and caches
+node_modules/
+.cache/
+dist/
+out/
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.spec
+
+# Runtime binaries/models are generated; retain the speech worker source.
+runtime/*
+!runtime/speech/
+runtime/speech/*
+!runtime/speech/worker.py
+
+# Local editing sessions, test outputs and media
+VibeflowData/
+verification/
+Projects/
+Exports/
+*.vibeflow
+*.media/
+*.mov
+*.MOV
+*.mp4
+*.MP4
+*.mkv
+*.webm
+*.avi
+*.m4v
+*.wav
+*.mp3
+*.aac
+*.srt
+*.ass
+*.log
+
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
+*.key
+.codex/
+.agents/
+.aws/
+Thumbs.db
+.DS_Store
